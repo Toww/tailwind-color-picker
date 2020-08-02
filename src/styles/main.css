@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap");
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -11958,6 +11958,62 @@ video {
   z-index: auto;
 }
 
+.hover\:z-0:hover{
+  z-index: 0;
+}
+
+.hover\:z-10:hover{
+  z-index: 10;
+}
+
+.hover\:z-20:hover{
+  z-index: 20;
+}
+
+.hover\:z-30:hover{
+  z-index: 30;
+}
+
+.hover\:z-40:hover{
+  z-index: 40;
+}
+
+.hover\:z-50:hover{
+  z-index: 50;
+}
+
+.hover\:z-auto:hover{
+  z-index: auto;
+}
+
+.focus\:z-0:focus{
+  z-index: 0;
+}
+
+.focus\:z-10:focus{
+  z-index: 10;
+}
+
+.focus\:z-20:focus{
+  z-index: 20;
+}
+
+.focus\:z-30:focus{
+  z-index: 30;
+}
+
+.focus\:z-40:focus{
+  z-index: 40;
+}
+
+.focus\:z-50:focus{
+  z-index: 50;
+}
+
+.focus\:z-auto:focus{
+  z-index: auto;
+}
+
 .gap-0{
   grid-gap: 0;
   gap: 0;
@@ -14300,6 +14356,62 @@ video {
   transition-property: transform;
 }
 
+.hover\:transition-none:hover{
+  transition-property: none;
+}
+
+.hover\:transition-all:hover{
+  transition-property: all;
+}
+
+.hover\:transition:hover{
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+}
+
+.hover\:transition-colors:hover{
+  transition-property: background-color, border-color, color, fill, stroke;
+}
+
+.hover\:transition-opacity:hover{
+  transition-property: opacity;
+}
+
+.hover\:transition-shadow:hover{
+  transition-property: box-shadow;
+}
+
+.hover\:transition-transform:hover{
+  transition-property: transform;
+}
+
+.focus\:transition-none:focus{
+  transition-property: none;
+}
+
+.focus\:transition-all:focus{
+  transition-property: all;
+}
+
+.focus\:transition:focus{
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+}
+
+.focus\:transition-colors:focus{
+  transition-property: background-color, border-color, color, fill, stroke;
+}
+
+.focus\:transition-opacity:focus{
+  transition-property: opacity;
+}
+
+.focus\:transition-shadow:focus{
+  transition-property: box-shadow;
+}
+
+.focus\:transition-transform:focus{
+  transition-property: transform;
+}
+
 .ease-linear{
   transition-timing-function: linear;
 }
@@ -14345,6 +14457,70 @@ video {
 }
 
 .duration-1000{
+  transition-duration: 1000ms;
+}
+
+.hover\:duration-75:hover{
+  transition-duration: 75ms;
+}
+
+.hover\:duration-100:hover{
+  transition-duration: 100ms;
+}
+
+.hover\:duration-150:hover{
+  transition-duration: 150ms;
+}
+
+.hover\:duration-200:hover{
+  transition-duration: 200ms;
+}
+
+.hover\:duration-300:hover{
+  transition-duration: 300ms;
+}
+
+.hover\:duration-500:hover{
+  transition-duration: 500ms;
+}
+
+.hover\:duration-700:hover{
+  transition-duration: 700ms;
+}
+
+.hover\:duration-1000:hover{
+  transition-duration: 1000ms;
+}
+
+.focus\:duration-75:focus{
+  transition-duration: 75ms;
+}
+
+.focus\:duration-100:focus{
+  transition-duration: 100ms;
+}
+
+.focus\:duration-150:focus{
+  transition-duration: 150ms;
+}
+
+.focus\:duration-200:focus{
+  transition-duration: 200ms;
+}
+
+.focus\:duration-300:focus{
+  transition-duration: 300ms;
+}
+
+.focus\:duration-500:focus{
+  transition-duration: 500ms;
+}
+
+.focus\:duration-700:focus{
+  transition-duration: 700ms;
+}
+
+.focus\:duration-1000:focus{
   transition-duration: 1000ms;
 }
 
@@ -14448,7 +14624,33 @@ body {
   --text-opacity: 1;
   color: #2d3748;
   color: rgba(45, 55, 72, var(--text-opacity));
-  font-family: 'Mulish', Arial, Helvetica, sans-serif;
+  font-family: "Mulish", Arial, Helvetica, sans-serif;
+}
+
+.palette-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition-property: transform;
+  --transform-translate-x: 0;
+  --transform-translate-y: 0;
+  --transform-rotate: 0;
+  --transform-skew-x: 0;
+  --transform-skew-y: 0;
+  --transform-scale-x: 1;
+  --transform-scale-y: 1;
+  transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.palette-container:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --transform-scale-x: 1.5;
+  --transform-scale-y: 1.5;
+  z-index:10;
 }
 
 @media (min-width: 640px){
@@ -25831,6 +26033,62 @@ body {
     z-index: auto;
   }
 
+  .sm\:hover\:z-0:hover{
+    z-index: 0;
+  }
+
+  .sm\:hover\:z-10:hover{
+    z-index: 10;
+  }
+
+  .sm\:hover\:z-20:hover{
+    z-index: 20;
+  }
+
+  .sm\:hover\:z-30:hover{
+    z-index: 30;
+  }
+
+  .sm\:hover\:z-40:hover{
+    z-index: 40;
+  }
+
+  .sm\:hover\:z-50:hover{
+    z-index: 50;
+  }
+
+  .sm\:hover\:z-auto:hover{
+    z-index: auto;
+  }
+
+  .sm\:focus\:z-0:focus{
+    z-index: 0;
+  }
+
+  .sm\:focus\:z-10:focus{
+    z-index: 10;
+  }
+
+  .sm\:focus\:z-20:focus{
+    z-index: 20;
+  }
+
+  .sm\:focus\:z-30:focus{
+    z-index: 30;
+  }
+
+  .sm\:focus\:z-40:focus{
+    z-index: 40;
+  }
+
+  .sm\:focus\:z-50:focus{
+    z-index: 50;
+  }
+
+  .sm\:focus\:z-auto:focus{
+    z-index: auto;
+  }
+
   .sm\:gap-0{
     grid-gap: 0;
     gap: 0;
@@ -28173,6 +28431,62 @@ body {
     transition-property: transform;
   }
 
+  .sm\:hover\:transition-none:hover{
+    transition-property: none;
+  }
+
+  .sm\:hover\:transition-all:hover{
+    transition-property: all;
+  }
+
+  .sm\:hover\:transition:hover{
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  }
+
+  .sm\:hover\:transition-colors:hover{
+    transition-property: background-color, border-color, color, fill, stroke;
+  }
+
+  .sm\:hover\:transition-opacity:hover{
+    transition-property: opacity;
+  }
+
+  .sm\:hover\:transition-shadow:hover{
+    transition-property: box-shadow;
+  }
+
+  .sm\:hover\:transition-transform:hover{
+    transition-property: transform;
+  }
+
+  .sm\:focus\:transition-none:focus{
+    transition-property: none;
+  }
+
+  .sm\:focus\:transition-all:focus{
+    transition-property: all;
+  }
+
+  .sm\:focus\:transition:focus{
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  }
+
+  .sm\:focus\:transition-colors:focus{
+    transition-property: background-color, border-color, color, fill, stroke;
+  }
+
+  .sm\:focus\:transition-opacity:focus{
+    transition-property: opacity;
+  }
+
+  .sm\:focus\:transition-shadow:focus{
+    transition-property: box-shadow;
+  }
+
+  .sm\:focus\:transition-transform:focus{
+    transition-property: transform;
+  }
+
   .sm\:ease-linear{
     transition-timing-function: linear;
   }
@@ -28218,6 +28532,70 @@ body {
   }
 
   .sm\:duration-1000{
+    transition-duration: 1000ms;
+  }
+
+  .sm\:hover\:duration-75:hover{
+    transition-duration: 75ms;
+  }
+
+  .sm\:hover\:duration-100:hover{
+    transition-duration: 100ms;
+  }
+
+  .sm\:hover\:duration-150:hover{
+    transition-duration: 150ms;
+  }
+
+  .sm\:hover\:duration-200:hover{
+    transition-duration: 200ms;
+  }
+
+  .sm\:hover\:duration-300:hover{
+    transition-duration: 300ms;
+  }
+
+  .sm\:hover\:duration-500:hover{
+    transition-duration: 500ms;
+  }
+
+  .sm\:hover\:duration-700:hover{
+    transition-duration: 700ms;
+  }
+
+  .sm\:hover\:duration-1000:hover{
+    transition-duration: 1000ms;
+  }
+
+  .sm\:focus\:duration-75:focus{
+    transition-duration: 75ms;
+  }
+
+  .sm\:focus\:duration-100:focus{
+    transition-duration: 100ms;
+  }
+
+  .sm\:focus\:duration-150:focus{
+    transition-duration: 150ms;
+  }
+
+  .sm\:focus\:duration-200:focus{
+    transition-duration: 200ms;
+  }
+
+  .sm\:focus\:duration-300:focus{
+    transition-duration: 300ms;
+  }
+
+  .sm\:focus\:duration-500:focus{
+    transition-duration: 500ms;
+  }
+
+  .sm\:focus\:duration-700:focus{
+    transition-duration: 700ms;
+  }
+
+  .sm\:focus\:duration-1000:focus{
     transition-duration: 1000ms;
   }
 
@@ -39654,6 +40032,62 @@ body {
     z-index: auto;
   }
 
+  .md\:hover\:z-0:hover{
+    z-index: 0;
+  }
+
+  .md\:hover\:z-10:hover{
+    z-index: 10;
+  }
+
+  .md\:hover\:z-20:hover{
+    z-index: 20;
+  }
+
+  .md\:hover\:z-30:hover{
+    z-index: 30;
+  }
+
+  .md\:hover\:z-40:hover{
+    z-index: 40;
+  }
+
+  .md\:hover\:z-50:hover{
+    z-index: 50;
+  }
+
+  .md\:hover\:z-auto:hover{
+    z-index: auto;
+  }
+
+  .md\:focus\:z-0:focus{
+    z-index: 0;
+  }
+
+  .md\:focus\:z-10:focus{
+    z-index: 10;
+  }
+
+  .md\:focus\:z-20:focus{
+    z-index: 20;
+  }
+
+  .md\:focus\:z-30:focus{
+    z-index: 30;
+  }
+
+  .md\:focus\:z-40:focus{
+    z-index: 40;
+  }
+
+  .md\:focus\:z-50:focus{
+    z-index: 50;
+  }
+
+  .md\:focus\:z-auto:focus{
+    z-index: auto;
+  }
+
   .md\:gap-0{
     grid-gap: 0;
     gap: 0;
@@ -41996,6 +42430,62 @@ body {
     transition-property: transform;
   }
 
+  .md\:hover\:transition-none:hover{
+    transition-property: none;
+  }
+
+  .md\:hover\:transition-all:hover{
+    transition-property: all;
+  }
+
+  .md\:hover\:transition:hover{
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  }
+
+  .md\:hover\:transition-colors:hover{
+    transition-property: background-color, border-color, color, fill, stroke;
+  }
+
+  .md\:hover\:transition-opacity:hover{
+    transition-property: opacity;
+  }
+
+  .md\:hover\:transition-shadow:hover{
+    transition-property: box-shadow;
+  }
+
+  .md\:hover\:transition-transform:hover{
+    transition-property: transform;
+  }
+
+  .md\:focus\:transition-none:focus{
+    transition-property: none;
+  }
+
+  .md\:focus\:transition-all:focus{
+    transition-property: all;
+  }
+
+  .md\:focus\:transition:focus{
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  }
+
+  .md\:focus\:transition-colors:focus{
+    transition-property: background-color, border-color, color, fill, stroke;
+  }
+
+  .md\:focus\:transition-opacity:focus{
+    transition-property: opacity;
+  }
+
+  .md\:focus\:transition-shadow:focus{
+    transition-property: box-shadow;
+  }
+
+  .md\:focus\:transition-transform:focus{
+    transition-property: transform;
+  }
+
   .md\:ease-linear{
     transition-timing-function: linear;
   }
@@ -42041,6 +42531,70 @@ body {
   }
 
   .md\:duration-1000{
+    transition-duration: 1000ms;
+  }
+
+  .md\:hover\:duration-75:hover{
+    transition-duration: 75ms;
+  }
+
+  .md\:hover\:duration-100:hover{
+    transition-duration: 100ms;
+  }
+
+  .md\:hover\:duration-150:hover{
+    transition-duration: 150ms;
+  }
+
+  .md\:hover\:duration-200:hover{
+    transition-duration: 200ms;
+  }
+
+  .md\:hover\:duration-300:hover{
+    transition-duration: 300ms;
+  }
+
+  .md\:hover\:duration-500:hover{
+    transition-duration: 500ms;
+  }
+
+  .md\:hover\:duration-700:hover{
+    transition-duration: 700ms;
+  }
+
+  .md\:hover\:duration-1000:hover{
+    transition-duration: 1000ms;
+  }
+
+  .md\:focus\:duration-75:focus{
+    transition-duration: 75ms;
+  }
+
+  .md\:focus\:duration-100:focus{
+    transition-duration: 100ms;
+  }
+
+  .md\:focus\:duration-150:focus{
+    transition-duration: 150ms;
+  }
+
+  .md\:focus\:duration-200:focus{
+    transition-duration: 200ms;
+  }
+
+  .md\:focus\:duration-300:focus{
+    transition-duration: 300ms;
+  }
+
+  .md\:focus\:duration-500:focus{
+    transition-duration: 500ms;
+  }
+
+  .md\:focus\:duration-700:focus{
+    transition-duration: 700ms;
+  }
+
+  .md\:focus\:duration-1000:focus{
     transition-duration: 1000ms;
   }
 
@@ -53477,6 +54031,62 @@ body {
     z-index: auto;
   }
 
+  .lg\:hover\:z-0:hover{
+    z-index: 0;
+  }
+
+  .lg\:hover\:z-10:hover{
+    z-index: 10;
+  }
+
+  .lg\:hover\:z-20:hover{
+    z-index: 20;
+  }
+
+  .lg\:hover\:z-30:hover{
+    z-index: 30;
+  }
+
+  .lg\:hover\:z-40:hover{
+    z-index: 40;
+  }
+
+  .lg\:hover\:z-50:hover{
+    z-index: 50;
+  }
+
+  .lg\:hover\:z-auto:hover{
+    z-index: auto;
+  }
+
+  .lg\:focus\:z-0:focus{
+    z-index: 0;
+  }
+
+  .lg\:focus\:z-10:focus{
+    z-index: 10;
+  }
+
+  .lg\:focus\:z-20:focus{
+    z-index: 20;
+  }
+
+  .lg\:focus\:z-30:focus{
+    z-index: 30;
+  }
+
+  .lg\:focus\:z-40:focus{
+    z-index: 40;
+  }
+
+  .lg\:focus\:z-50:focus{
+    z-index: 50;
+  }
+
+  .lg\:focus\:z-auto:focus{
+    z-index: auto;
+  }
+
   .lg\:gap-0{
     grid-gap: 0;
     gap: 0;
@@ -55819,6 +56429,62 @@ body {
     transition-property: transform;
   }
 
+  .lg\:hover\:transition-none:hover{
+    transition-property: none;
+  }
+
+  .lg\:hover\:transition-all:hover{
+    transition-property: all;
+  }
+
+  .lg\:hover\:transition:hover{
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  }
+
+  .lg\:hover\:transition-colors:hover{
+    transition-property: background-color, border-color, color, fill, stroke;
+  }
+
+  .lg\:hover\:transition-opacity:hover{
+    transition-property: opacity;
+  }
+
+  .lg\:hover\:transition-shadow:hover{
+    transition-property: box-shadow;
+  }
+
+  .lg\:hover\:transition-transform:hover{
+    transition-property: transform;
+  }
+
+  .lg\:focus\:transition-none:focus{
+    transition-property: none;
+  }
+
+  .lg\:focus\:transition-all:focus{
+    transition-property: all;
+  }
+
+  .lg\:focus\:transition:focus{
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  }
+
+  .lg\:focus\:transition-colors:focus{
+    transition-property: background-color, border-color, color, fill, stroke;
+  }
+
+  .lg\:focus\:transition-opacity:focus{
+    transition-property: opacity;
+  }
+
+  .lg\:focus\:transition-shadow:focus{
+    transition-property: box-shadow;
+  }
+
+  .lg\:focus\:transition-transform:focus{
+    transition-property: transform;
+  }
+
   .lg\:ease-linear{
     transition-timing-function: linear;
   }
@@ -55864,6 +56530,70 @@ body {
   }
 
   .lg\:duration-1000{
+    transition-duration: 1000ms;
+  }
+
+  .lg\:hover\:duration-75:hover{
+    transition-duration: 75ms;
+  }
+
+  .lg\:hover\:duration-100:hover{
+    transition-duration: 100ms;
+  }
+
+  .lg\:hover\:duration-150:hover{
+    transition-duration: 150ms;
+  }
+
+  .lg\:hover\:duration-200:hover{
+    transition-duration: 200ms;
+  }
+
+  .lg\:hover\:duration-300:hover{
+    transition-duration: 300ms;
+  }
+
+  .lg\:hover\:duration-500:hover{
+    transition-duration: 500ms;
+  }
+
+  .lg\:hover\:duration-700:hover{
+    transition-duration: 700ms;
+  }
+
+  .lg\:hover\:duration-1000:hover{
+    transition-duration: 1000ms;
+  }
+
+  .lg\:focus\:duration-75:focus{
+    transition-duration: 75ms;
+  }
+
+  .lg\:focus\:duration-100:focus{
+    transition-duration: 100ms;
+  }
+
+  .lg\:focus\:duration-150:focus{
+    transition-duration: 150ms;
+  }
+
+  .lg\:focus\:duration-200:focus{
+    transition-duration: 200ms;
+  }
+
+  .lg\:focus\:duration-300:focus{
+    transition-duration: 300ms;
+  }
+
+  .lg\:focus\:duration-500:focus{
+    transition-duration: 500ms;
+  }
+
+  .lg\:focus\:duration-700:focus{
+    transition-duration: 700ms;
+  }
+
+  .lg\:focus\:duration-1000:focus{
     transition-duration: 1000ms;
   }
 
@@ -67300,6 +68030,62 @@ body {
     z-index: auto;
   }
 
+  .xl\:hover\:z-0:hover{
+    z-index: 0;
+  }
+
+  .xl\:hover\:z-10:hover{
+    z-index: 10;
+  }
+
+  .xl\:hover\:z-20:hover{
+    z-index: 20;
+  }
+
+  .xl\:hover\:z-30:hover{
+    z-index: 30;
+  }
+
+  .xl\:hover\:z-40:hover{
+    z-index: 40;
+  }
+
+  .xl\:hover\:z-50:hover{
+    z-index: 50;
+  }
+
+  .xl\:hover\:z-auto:hover{
+    z-index: auto;
+  }
+
+  .xl\:focus\:z-0:focus{
+    z-index: 0;
+  }
+
+  .xl\:focus\:z-10:focus{
+    z-index: 10;
+  }
+
+  .xl\:focus\:z-20:focus{
+    z-index: 20;
+  }
+
+  .xl\:focus\:z-30:focus{
+    z-index: 30;
+  }
+
+  .xl\:focus\:z-40:focus{
+    z-index: 40;
+  }
+
+  .xl\:focus\:z-50:focus{
+    z-index: 50;
+  }
+
+  .xl\:focus\:z-auto:focus{
+    z-index: auto;
+  }
+
   .xl\:gap-0{
     grid-gap: 0;
     gap: 0;
@@ -69642,6 +70428,62 @@ body {
     transition-property: transform;
   }
 
+  .xl\:hover\:transition-none:hover{
+    transition-property: none;
+  }
+
+  .xl\:hover\:transition-all:hover{
+    transition-property: all;
+  }
+
+  .xl\:hover\:transition:hover{
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  }
+
+  .xl\:hover\:transition-colors:hover{
+    transition-property: background-color, border-color, color, fill, stroke;
+  }
+
+  .xl\:hover\:transition-opacity:hover{
+    transition-property: opacity;
+  }
+
+  .xl\:hover\:transition-shadow:hover{
+    transition-property: box-shadow;
+  }
+
+  .xl\:hover\:transition-transform:hover{
+    transition-property: transform;
+  }
+
+  .xl\:focus\:transition-none:focus{
+    transition-property: none;
+  }
+
+  .xl\:focus\:transition-all:focus{
+    transition-property: all;
+  }
+
+  .xl\:focus\:transition:focus{
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  }
+
+  .xl\:focus\:transition-colors:focus{
+    transition-property: background-color, border-color, color, fill, stroke;
+  }
+
+  .xl\:focus\:transition-opacity:focus{
+    transition-property: opacity;
+  }
+
+  .xl\:focus\:transition-shadow:focus{
+    transition-property: box-shadow;
+  }
+
+  .xl\:focus\:transition-transform:focus{
+    transition-property: transform;
+  }
+
   .xl\:ease-linear{
     transition-timing-function: linear;
   }
@@ -69687,6 +70529,70 @@ body {
   }
 
   .xl\:duration-1000{
+    transition-duration: 1000ms;
+  }
+
+  .xl\:hover\:duration-75:hover{
+    transition-duration: 75ms;
+  }
+
+  .xl\:hover\:duration-100:hover{
+    transition-duration: 100ms;
+  }
+
+  .xl\:hover\:duration-150:hover{
+    transition-duration: 150ms;
+  }
+
+  .xl\:hover\:duration-200:hover{
+    transition-duration: 200ms;
+  }
+
+  .xl\:hover\:duration-300:hover{
+    transition-duration: 300ms;
+  }
+
+  .xl\:hover\:duration-500:hover{
+    transition-duration: 500ms;
+  }
+
+  .xl\:hover\:duration-700:hover{
+    transition-duration: 700ms;
+  }
+
+  .xl\:hover\:duration-1000:hover{
+    transition-duration: 1000ms;
+  }
+
+  .xl\:focus\:duration-75:focus{
+    transition-duration: 75ms;
+  }
+
+  .xl\:focus\:duration-100:focus{
+    transition-duration: 100ms;
+  }
+
+  .xl\:focus\:duration-150:focus{
+    transition-duration: 150ms;
+  }
+
+  .xl\:focus\:duration-200:focus{
+    transition-duration: 200ms;
+  }
+
+  .xl\:focus\:duration-300:focus{
+    transition-duration: 300ms;
+  }
+
+  .xl\:focus\:duration-500:focus{
+    transition-duration: 500ms;
+  }
+
+  .xl\:focus\:duration-700:focus{
+    transition-duration: 700ms;
+  }
+
+  .xl\:focus\:duration-1000:focus{
     transition-duration: 1000ms;
   }
 

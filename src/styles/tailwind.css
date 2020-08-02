@@ -1,9 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-    @apply text-gray-800;
-    font-family: 'Mulish', Arial, Helvetica, sans-serif;
+  @apply text-gray-800;
+  font-family: "Mulish", Arial, Helvetica, sans-serif;
+}
+
+.palette-container {
+  @apply flex justify-start items-center mb-3 shadow-md transition-transform transform duration-300 ease-in-out;
+}
+
+.palette-container:hover {
+  @apply shadow-xl scale-150;
+  z-index:10;
 }
