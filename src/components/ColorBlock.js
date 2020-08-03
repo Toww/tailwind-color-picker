@@ -1,18 +1,19 @@
 import React, { useState } from "react";
-
+import { hexValues } from "../infos/hexList";
 const ColorBlock = ({ color, value, svgOpacity }) => {
+  // Setting the svg color depending on background color
   const valueNum = parseInt(value);
   const svgColor = valueNum > 500 ? "white" : "gray-900";
 
   // ---- Copying to clipboard and displaying info
-
   const infoDiv = React.createRef();
 
   const [copiedEl, setCopiedEl] = useState("");
 
   function svgClick(element) {
     // Setting what should be copied
-    const toCopy = element === "Hex" ? "copied Hex" : `${color}-${value}`;
+    const toCopy =
+      element === "Hex" ? `${hexValues[color][value]}` : `${color}-${value}`;
 
     // Copying to clipboard
     const temp = document.createElement("textarea");

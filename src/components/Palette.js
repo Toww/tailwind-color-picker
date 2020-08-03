@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ColorBlock from "./ColorBlock";
 
 const Palette = ({ color }) => {
+  
   // On hover over the palette, the cache become visible
   // to hide other palettes
   const [cacheOpacity, setCacheOpacity] = useState("opacity-0");
