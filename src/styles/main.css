@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
@@ -6242,6 +6242,182 @@ video {
 }
 
 .h-screen{
+  height: 100vh;
+}
+
+.hover\:h-0:hover{
+  height: 0;
+}
+
+.hover\:h-1:hover{
+  height: 0.25rem;
+}
+
+.hover\:h-2:hover{
+  height: 0.5rem;
+}
+
+.hover\:h-3:hover{
+  height: 0.75rem;
+}
+
+.hover\:h-4:hover{
+  height: 1rem;
+}
+
+.hover\:h-5:hover{
+  height: 1.25rem;
+}
+
+.hover\:h-6:hover{
+  height: 1.5rem;
+}
+
+.hover\:h-8:hover{
+  height: 2rem;
+}
+
+.hover\:h-10:hover{
+  height: 2.5rem;
+}
+
+.hover\:h-12:hover{
+  height: 3rem;
+}
+
+.hover\:h-16:hover{
+  height: 4rem;
+}
+
+.hover\:h-20:hover{
+  height: 5rem;
+}
+
+.hover\:h-24:hover{
+  height: 6rem;
+}
+
+.hover\:h-32:hover{
+  height: 8rem;
+}
+
+.hover\:h-40:hover{
+  height: 10rem;
+}
+
+.hover\:h-48:hover{
+  height: 12rem;
+}
+
+.hover\:h-56:hover{
+  height: 14rem;
+}
+
+.hover\:h-64:hover{
+  height: 16rem;
+}
+
+.hover\:h-auto:hover{
+  height: auto;
+}
+
+.hover\:h-px:hover{
+  height: 1px;
+}
+
+.hover\:h-full:hover{
+  height: 100%;
+}
+
+.hover\:h-screen:hover{
+  height: 100vh;
+}
+
+.focus\:h-0:focus{
+  height: 0;
+}
+
+.focus\:h-1:focus{
+  height: 0.25rem;
+}
+
+.focus\:h-2:focus{
+  height: 0.5rem;
+}
+
+.focus\:h-3:focus{
+  height: 0.75rem;
+}
+
+.focus\:h-4:focus{
+  height: 1rem;
+}
+
+.focus\:h-5:focus{
+  height: 1.25rem;
+}
+
+.focus\:h-6:focus{
+  height: 1.5rem;
+}
+
+.focus\:h-8:focus{
+  height: 2rem;
+}
+
+.focus\:h-10:focus{
+  height: 2.5rem;
+}
+
+.focus\:h-12:focus{
+  height: 3rem;
+}
+
+.focus\:h-16:focus{
+  height: 4rem;
+}
+
+.focus\:h-20:focus{
+  height: 5rem;
+}
+
+.focus\:h-24:focus{
+  height: 6rem;
+}
+
+.focus\:h-32:focus{
+  height: 8rem;
+}
+
+.focus\:h-40:focus{
+  height: 10rem;
+}
+
+.focus\:h-48:focus{
+  height: 12rem;
+}
+
+.focus\:h-56:focus{
+  height: 14rem;
+}
+
+.focus\:h-64:focus{
+  height: 16rem;
+}
+
+.focus\:h-auto:focus{
+  height: auto;
+}
+
+.focus\:h-px:focus{
+  height: 1px;
+}
+
+.focus\:h-full:focus{
+  height: 100%;
+}
+
+.focus\:h-screen:focus{
   height: 100vh;
 }
 
@@ -14624,33 +14800,46 @@ body {
   --text-opacity: 1;
   color: #2d3748;
   color: rgba(45, 55, 72, var(--text-opacity));
-  font-family: "Mulish", Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+.color-block {
+  flex-grow: 1;
+  height: 100%;
 }
 
 .palette-container {
   display: flex;
   justify-content: flex-start;
+  position: relative;
   align-items: center;
   margin-bottom: 0.75rem;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  transition-property: transform;
-  --transform-translate-x: 0;
-  --transform-translate-y: 0;
-  --transform-rotate: 0;
-  --transform-skew-x: 0;
-  --transform-skew-y: 0;
-  --transform-scale-x: 1;
-  --transform-scale-y: 1;
-  transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  height: 8rem;
 }
 
 .palette-container:hover {
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-  --transform-scale-x: 1.5;
-  --transform-scale-y: 1.5;
-  z-index:10;
+  height: 12rem;
+  z-index: 20;
+}
+
+.cache {
+  display: block;
+  --bg-opacity: 1;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, var(--bg-opacity));
+  position: fixed;
+  --bg-opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  pointer-events: none;
+  transition-property: all;
+  transition-duration: 150ms;
 }
 
 @media (min-width: 640px){
@@ -20317,6 +20506,182 @@ body {
   }
 
   .sm\:h-screen{
+    height: 100vh;
+  }
+
+  .sm\:hover\:h-0:hover{
+    height: 0;
+  }
+
+  .sm\:hover\:h-1:hover{
+    height: 0.25rem;
+  }
+
+  .sm\:hover\:h-2:hover{
+    height: 0.5rem;
+  }
+
+  .sm\:hover\:h-3:hover{
+    height: 0.75rem;
+  }
+
+  .sm\:hover\:h-4:hover{
+    height: 1rem;
+  }
+
+  .sm\:hover\:h-5:hover{
+    height: 1.25rem;
+  }
+
+  .sm\:hover\:h-6:hover{
+    height: 1.5rem;
+  }
+
+  .sm\:hover\:h-8:hover{
+    height: 2rem;
+  }
+
+  .sm\:hover\:h-10:hover{
+    height: 2.5rem;
+  }
+
+  .sm\:hover\:h-12:hover{
+    height: 3rem;
+  }
+
+  .sm\:hover\:h-16:hover{
+    height: 4rem;
+  }
+
+  .sm\:hover\:h-20:hover{
+    height: 5rem;
+  }
+
+  .sm\:hover\:h-24:hover{
+    height: 6rem;
+  }
+
+  .sm\:hover\:h-32:hover{
+    height: 8rem;
+  }
+
+  .sm\:hover\:h-40:hover{
+    height: 10rem;
+  }
+
+  .sm\:hover\:h-48:hover{
+    height: 12rem;
+  }
+
+  .sm\:hover\:h-56:hover{
+    height: 14rem;
+  }
+
+  .sm\:hover\:h-64:hover{
+    height: 16rem;
+  }
+
+  .sm\:hover\:h-auto:hover{
+    height: auto;
+  }
+
+  .sm\:hover\:h-px:hover{
+    height: 1px;
+  }
+
+  .sm\:hover\:h-full:hover{
+    height: 100%;
+  }
+
+  .sm\:hover\:h-screen:hover{
+    height: 100vh;
+  }
+
+  .sm\:focus\:h-0:focus{
+    height: 0;
+  }
+
+  .sm\:focus\:h-1:focus{
+    height: 0.25rem;
+  }
+
+  .sm\:focus\:h-2:focus{
+    height: 0.5rem;
+  }
+
+  .sm\:focus\:h-3:focus{
+    height: 0.75rem;
+  }
+
+  .sm\:focus\:h-4:focus{
+    height: 1rem;
+  }
+
+  .sm\:focus\:h-5:focus{
+    height: 1.25rem;
+  }
+
+  .sm\:focus\:h-6:focus{
+    height: 1.5rem;
+  }
+
+  .sm\:focus\:h-8:focus{
+    height: 2rem;
+  }
+
+  .sm\:focus\:h-10:focus{
+    height: 2.5rem;
+  }
+
+  .sm\:focus\:h-12:focus{
+    height: 3rem;
+  }
+
+  .sm\:focus\:h-16:focus{
+    height: 4rem;
+  }
+
+  .sm\:focus\:h-20:focus{
+    height: 5rem;
+  }
+
+  .sm\:focus\:h-24:focus{
+    height: 6rem;
+  }
+
+  .sm\:focus\:h-32:focus{
+    height: 8rem;
+  }
+
+  .sm\:focus\:h-40:focus{
+    height: 10rem;
+  }
+
+  .sm\:focus\:h-48:focus{
+    height: 12rem;
+  }
+
+  .sm\:focus\:h-56:focus{
+    height: 14rem;
+  }
+
+  .sm\:focus\:h-64:focus{
+    height: 16rem;
+  }
+
+  .sm\:focus\:h-auto:focus{
+    height: auto;
+  }
+
+  .sm\:focus\:h-px:focus{
+    height: 1px;
+  }
+
+  .sm\:focus\:h-full:focus{
+    height: 100%;
+  }
+
+  .sm\:focus\:h-screen:focus{
     height: 100vh;
   }
 
@@ -34319,6 +34684,182 @@ body {
     height: 100vh;
   }
 
+  .md\:hover\:h-0:hover{
+    height: 0;
+  }
+
+  .md\:hover\:h-1:hover{
+    height: 0.25rem;
+  }
+
+  .md\:hover\:h-2:hover{
+    height: 0.5rem;
+  }
+
+  .md\:hover\:h-3:hover{
+    height: 0.75rem;
+  }
+
+  .md\:hover\:h-4:hover{
+    height: 1rem;
+  }
+
+  .md\:hover\:h-5:hover{
+    height: 1.25rem;
+  }
+
+  .md\:hover\:h-6:hover{
+    height: 1.5rem;
+  }
+
+  .md\:hover\:h-8:hover{
+    height: 2rem;
+  }
+
+  .md\:hover\:h-10:hover{
+    height: 2.5rem;
+  }
+
+  .md\:hover\:h-12:hover{
+    height: 3rem;
+  }
+
+  .md\:hover\:h-16:hover{
+    height: 4rem;
+  }
+
+  .md\:hover\:h-20:hover{
+    height: 5rem;
+  }
+
+  .md\:hover\:h-24:hover{
+    height: 6rem;
+  }
+
+  .md\:hover\:h-32:hover{
+    height: 8rem;
+  }
+
+  .md\:hover\:h-40:hover{
+    height: 10rem;
+  }
+
+  .md\:hover\:h-48:hover{
+    height: 12rem;
+  }
+
+  .md\:hover\:h-56:hover{
+    height: 14rem;
+  }
+
+  .md\:hover\:h-64:hover{
+    height: 16rem;
+  }
+
+  .md\:hover\:h-auto:hover{
+    height: auto;
+  }
+
+  .md\:hover\:h-px:hover{
+    height: 1px;
+  }
+
+  .md\:hover\:h-full:hover{
+    height: 100%;
+  }
+
+  .md\:hover\:h-screen:hover{
+    height: 100vh;
+  }
+
+  .md\:focus\:h-0:focus{
+    height: 0;
+  }
+
+  .md\:focus\:h-1:focus{
+    height: 0.25rem;
+  }
+
+  .md\:focus\:h-2:focus{
+    height: 0.5rem;
+  }
+
+  .md\:focus\:h-3:focus{
+    height: 0.75rem;
+  }
+
+  .md\:focus\:h-4:focus{
+    height: 1rem;
+  }
+
+  .md\:focus\:h-5:focus{
+    height: 1.25rem;
+  }
+
+  .md\:focus\:h-6:focus{
+    height: 1.5rem;
+  }
+
+  .md\:focus\:h-8:focus{
+    height: 2rem;
+  }
+
+  .md\:focus\:h-10:focus{
+    height: 2.5rem;
+  }
+
+  .md\:focus\:h-12:focus{
+    height: 3rem;
+  }
+
+  .md\:focus\:h-16:focus{
+    height: 4rem;
+  }
+
+  .md\:focus\:h-20:focus{
+    height: 5rem;
+  }
+
+  .md\:focus\:h-24:focus{
+    height: 6rem;
+  }
+
+  .md\:focus\:h-32:focus{
+    height: 8rem;
+  }
+
+  .md\:focus\:h-40:focus{
+    height: 10rem;
+  }
+
+  .md\:focus\:h-48:focus{
+    height: 12rem;
+  }
+
+  .md\:focus\:h-56:focus{
+    height: 14rem;
+  }
+
+  .md\:focus\:h-64:focus{
+    height: 16rem;
+  }
+
+  .md\:focus\:h-auto:focus{
+    height: auto;
+  }
+
+  .md\:focus\:h-px:focus{
+    height: 1px;
+  }
+
+  .md\:focus\:h-full:focus{
+    height: 100%;
+  }
+
+  .md\:focus\:h-screen:focus{
+    height: 100vh;
+  }
+
   .md\:text-xs{
     font-size: 0.75rem;
   }
@@ -48318,6 +48859,182 @@ body {
     height: 100vh;
   }
 
+  .lg\:hover\:h-0:hover{
+    height: 0;
+  }
+
+  .lg\:hover\:h-1:hover{
+    height: 0.25rem;
+  }
+
+  .lg\:hover\:h-2:hover{
+    height: 0.5rem;
+  }
+
+  .lg\:hover\:h-3:hover{
+    height: 0.75rem;
+  }
+
+  .lg\:hover\:h-4:hover{
+    height: 1rem;
+  }
+
+  .lg\:hover\:h-5:hover{
+    height: 1.25rem;
+  }
+
+  .lg\:hover\:h-6:hover{
+    height: 1.5rem;
+  }
+
+  .lg\:hover\:h-8:hover{
+    height: 2rem;
+  }
+
+  .lg\:hover\:h-10:hover{
+    height: 2.5rem;
+  }
+
+  .lg\:hover\:h-12:hover{
+    height: 3rem;
+  }
+
+  .lg\:hover\:h-16:hover{
+    height: 4rem;
+  }
+
+  .lg\:hover\:h-20:hover{
+    height: 5rem;
+  }
+
+  .lg\:hover\:h-24:hover{
+    height: 6rem;
+  }
+
+  .lg\:hover\:h-32:hover{
+    height: 8rem;
+  }
+
+  .lg\:hover\:h-40:hover{
+    height: 10rem;
+  }
+
+  .lg\:hover\:h-48:hover{
+    height: 12rem;
+  }
+
+  .lg\:hover\:h-56:hover{
+    height: 14rem;
+  }
+
+  .lg\:hover\:h-64:hover{
+    height: 16rem;
+  }
+
+  .lg\:hover\:h-auto:hover{
+    height: auto;
+  }
+
+  .lg\:hover\:h-px:hover{
+    height: 1px;
+  }
+
+  .lg\:hover\:h-full:hover{
+    height: 100%;
+  }
+
+  .lg\:hover\:h-screen:hover{
+    height: 100vh;
+  }
+
+  .lg\:focus\:h-0:focus{
+    height: 0;
+  }
+
+  .lg\:focus\:h-1:focus{
+    height: 0.25rem;
+  }
+
+  .lg\:focus\:h-2:focus{
+    height: 0.5rem;
+  }
+
+  .lg\:focus\:h-3:focus{
+    height: 0.75rem;
+  }
+
+  .lg\:focus\:h-4:focus{
+    height: 1rem;
+  }
+
+  .lg\:focus\:h-5:focus{
+    height: 1.25rem;
+  }
+
+  .lg\:focus\:h-6:focus{
+    height: 1.5rem;
+  }
+
+  .lg\:focus\:h-8:focus{
+    height: 2rem;
+  }
+
+  .lg\:focus\:h-10:focus{
+    height: 2.5rem;
+  }
+
+  .lg\:focus\:h-12:focus{
+    height: 3rem;
+  }
+
+  .lg\:focus\:h-16:focus{
+    height: 4rem;
+  }
+
+  .lg\:focus\:h-20:focus{
+    height: 5rem;
+  }
+
+  .lg\:focus\:h-24:focus{
+    height: 6rem;
+  }
+
+  .lg\:focus\:h-32:focus{
+    height: 8rem;
+  }
+
+  .lg\:focus\:h-40:focus{
+    height: 10rem;
+  }
+
+  .lg\:focus\:h-48:focus{
+    height: 12rem;
+  }
+
+  .lg\:focus\:h-56:focus{
+    height: 14rem;
+  }
+
+  .lg\:focus\:h-64:focus{
+    height: 16rem;
+  }
+
+  .lg\:focus\:h-auto:focus{
+    height: auto;
+  }
+
+  .lg\:focus\:h-px:focus{
+    height: 1px;
+  }
+
+  .lg\:focus\:h-full:focus{
+    height: 100%;
+  }
+
+  .lg\:focus\:h-screen:focus{
+    height: 100vh;
+  }
+
   .lg\:text-xs{
     font-size: 0.75rem;
   }
@@ -62314,6 +63031,182 @@ body {
   }
 
   .xl\:h-screen{
+    height: 100vh;
+  }
+
+  .xl\:hover\:h-0:hover{
+    height: 0;
+  }
+
+  .xl\:hover\:h-1:hover{
+    height: 0.25rem;
+  }
+
+  .xl\:hover\:h-2:hover{
+    height: 0.5rem;
+  }
+
+  .xl\:hover\:h-3:hover{
+    height: 0.75rem;
+  }
+
+  .xl\:hover\:h-4:hover{
+    height: 1rem;
+  }
+
+  .xl\:hover\:h-5:hover{
+    height: 1.25rem;
+  }
+
+  .xl\:hover\:h-6:hover{
+    height: 1.5rem;
+  }
+
+  .xl\:hover\:h-8:hover{
+    height: 2rem;
+  }
+
+  .xl\:hover\:h-10:hover{
+    height: 2.5rem;
+  }
+
+  .xl\:hover\:h-12:hover{
+    height: 3rem;
+  }
+
+  .xl\:hover\:h-16:hover{
+    height: 4rem;
+  }
+
+  .xl\:hover\:h-20:hover{
+    height: 5rem;
+  }
+
+  .xl\:hover\:h-24:hover{
+    height: 6rem;
+  }
+
+  .xl\:hover\:h-32:hover{
+    height: 8rem;
+  }
+
+  .xl\:hover\:h-40:hover{
+    height: 10rem;
+  }
+
+  .xl\:hover\:h-48:hover{
+    height: 12rem;
+  }
+
+  .xl\:hover\:h-56:hover{
+    height: 14rem;
+  }
+
+  .xl\:hover\:h-64:hover{
+    height: 16rem;
+  }
+
+  .xl\:hover\:h-auto:hover{
+    height: auto;
+  }
+
+  .xl\:hover\:h-px:hover{
+    height: 1px;
+  }
+
+  .xl\:hover\:h-full:hover{
+    height: 100%;
+  }
+
+  .xl\:hover\:h-screen:hover{
+    height: 100vh;
+  }
+
+  .xl\:focus\:h-0:focus{
+    height: 0;
+  }
+
+  .xl\:focus\:h-1:focus{
+    height: 0.25rem;
+  }
+
+  .xl\:focus\:h-2:focus{
+    height: 0.5rem;
+  }
+
+  .xl\:focus\:h-3:focus{
+    height: 0.75rem;
+  }
+
+  .xl\:focus\:h-4:focus{
+    height: 1rem;
+  }
+
+  .xl\:focus\:h-5:focus{
+    height: 1.25rem;
+  }
+
+  .xl\:focus\:h-6:focus{
+    height: 1.5rem;
+  }
+
+  .xl\:focus\:h-8:focus{
+    height: 2rem;
+  }
+
+  .xl\:focus\:h-10:focus{
+    height: 2.5rem;
+  }
+
+  .xl\:focus\:h-12:focus{
+    height: 3rem;
+  }
+
+  .xl\:focus\:h-16:focus{
+    height: 4rem;
+  }
+
+  .xl\:focus\:h-20:focus{
+    height: 5rem;
+  }
+
+  .xl\:focus\:h-24:focus{
+    height: 6rem;
+  }
+
+  .xl\:focus\:h-32:focus{
+    height: 8rem;
+  }
+
+  .xl\:focus\:h-40:focus{
+    height: 10rem;
+  }
+
+  .xl\:focus\:h-48:focus{
+    height: 12rem;
+  }
+
+  .xl\:focus\:h-56:focus{
+    height: 14rem;
+  }
+
+  .xl\:focus\:h-64:focus{
+    height: 16rem;
+  }
+
+  .xl\:focus\:h-auto:focus{
+    height: auto;
+  }
+
+  .xl\:focus\:h-px:focus{
+    height: 1px;
+  }
+
+  .xl\:focus\:h-full:focus{
+    height: 100%;
+  }
+
+  .xl\:focus\:h-screen:focus{
     height: 100vh;
   }
 

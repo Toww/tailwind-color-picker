@@ -1,18 +1,25 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
   @apply text-gray-800;
-  font-family: "Mulish", Arial, Helvetica, sans-serif;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+.color-block {
+  @apply flex-grow h-full;
 }
 
 .palette-container {
-  @apply flex justify-start items-center mb-3 shadow-md transition-transform transform duration-300 ease-in-out;
+  @apply flex justify-start relative items-center mb-3 shadow-md relative h-32;
 }
 
 .palette-container:hover {
-  @apply shadow-xl scale-150;
-  z-index:10;
+  @apply shadow-xl h-48 z-20;
+}
+
+.cache {
+  @apply block bg-black fixed bg-opacity-50 w-full h-full top-0 left-0 z-10 pointer-events-none transition-all duration-150;
 }
