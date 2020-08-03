@@ -1,4 +1,5 @@
 {
+  "homepage": "https://toww.github.io/tailwind-color-picker/",
   "name": "tailwind-colors",
   "version": "0.1.0",
   "private": true,
@@ -14,6 +15,8 @@
     "tailwindcss": "^1.6.1"
   },
   "scripts": {
+    "predeploy": "npm run build:css && npm run build",
+    "deploy": "npm run build:css && gh-pages -d build",
     "start": "npm run build:css && react-scripts start",
     "build": "npm run build:css && react-scripts build",
     "test": "react-scripts test",
