@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,18 +8,26 @@ body {
   font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
-.color-block {
-  @apply flex-grow h-full;
-}
-
 .palette-container {
-  @apply flex justify-start relative items-center mb-3 shadow-md relative h-32;
+  @apply relative h-128 mb-3 transition-all duration-150 ease-in-out grid grid-cols-2;
 }
 
 .palette-container:hover {
-  @apply shadow-xl h-48 z-20;
+  @apply z-20;
 }
 
 .cache {
-  @apply block bg-black fixed bg-opacity-50 w-full h-full top-0 left-0 z-10 pointer-events-none transition-all duration-150;
+  @apply block bg-black fixed bg-opacity-50 w-full h-full top-0 left-0 z-10 pointer-events-none transition-all duration-150 invisible;
+}
+
+.svg {
+  @apply w-8 mx-auto transform transition duration-300 ease-in-out;
+}
+
+.svg:hover {
+  @apply scale-150;
+}
+
+.svg-container {
+  @apply h-full w-full flex transition duration-500 ease-in-out justify-evenly items-center;
 }

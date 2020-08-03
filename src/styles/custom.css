@@ -1,0 +1,25 @@
+.pop {
+    animation: pop 1.75s ease-in-out forwards;
+}
+
+@keyframes pop {
+    0% {
+        visibility: visible;
+        opacity: 0;
+        transform: translate(0, 10px) scale(0.2,0.2);  
+    }
+    10% {
+        opacity: 1;
+        transform: translate(0, 0px) scale(1,1); 
+    }
+
+    85% {
+        opacity: 1;
+        transform: translate(0, 0px) scale(1,1); 
+    }
+
+    100% {
+        transform: translate(0,10px) scale(0,0); 
+        opacity: 0;
+    }
+}
