@@ -1,16 +1,27 @@
-import React, {useState} from "react";
-
+import React, { useState } from "react";
+import { hexValues } from "../infos/hexList";
 const ColorBlock = ({ color, value, svgOpacity }) => {
+  // Setting the svg color depending on background color
   const valueNum = parseInt(value);
   const svgColor = valueNum > 500 ? "white" : "gray-900";
 
-
-  // ---- Copying to clpboard and displaying info
+  // ---- Copying to clipboard and displaying info
   const infoDiv = React.createRef();
 
-  const [copiedEl, setCopiedEl] = useState('');
+  const [copiedEl, setCopiedEl] = useState("");
 
   function svgClick(element) {
+    // Setting what should be copied
+    const toCopy =
+      element === "Hex" ? `${hexValues[color][value]}` : `${color}-${value}`;
+
+    // Copying to clipboard
+    const temp = document.createElement("textarea");
+    temp.value = toCopy;
+    document.body.appendChild(temp);
+    temp.select();
+    document.execCommand("copy");
+    document.body.removeChild(temp);
 
     // Telling user that Hex or Name of the color is copied
     setCopiedEl(element);
@@ -30,7 +41,7 @@ const ColorBlock = ({ color, value, svgOpacity }) => {
           {copiedEl} copied !
         </div>
         <svg
-          onClick={() => svgClick('Hex')}
+          onClick={() => svgClick("Hex")}
           className="svg"
           fill="none"
           strokeLinecap="round"
@@ -42,7 +53,7 @@ const ColorBlock = ({ color, value, svgOpacity }) => {
           <path d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"></path>
         </svg>
         <svg
-          onClick={() => svgClick('Name')}
+          onClick={() => svgClick("Name")}
           className="svg"
           fill="none"
           strokeLinecap="round"
