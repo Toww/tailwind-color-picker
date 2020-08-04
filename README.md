@@ -4,4 +4,4 @@ A color picker for Tailwind CSS, easily copy hex code or class name for any colo
 
 This project was made with [React](https://reactjs.org/ "React") and [Tailwind CSS](https://tailwindcss.com/ "Tailwind CSS").
 
-Online version available at: [https://toww.github.io/tailwind-color-picker/](https://toww.github.io/tailwind-color-picker/)
+Online version available at: [https://tailwind-color-picker.vercel.app/](https://tailwind-color-picker.vercel.app/)
